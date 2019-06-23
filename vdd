@@ -1,0 +1,14 @@
+#! /bin/bash
+
+#Check if Parameters are set
+if [ "$1" = "" ]; then
+  echo "Example usage: vdd /dev/sdX backup.iso"
+  echo "               vdd test.img /dev/sdX  "
+  echo "               vdd /dev/sde2 /dev/sde3 \"bs=128M conv=notrunc,noerror\""
+  echo ""
+  echo "2019 Secure Solutions. This tool is free Software!"
+  echo "https://www.GitHub.com/Secure-Solutions/vdd"
+  exit
+fi
+
+#(pv -n $1 | dd of=$2 $3) 2>&1 | dialog --gauge "Running dd command (cloning), please wait..." 10 70 0
