@@ -1,0 +1,12 @@
+#! /bin/bash
+
+#Root Check
+if [ "$EUID" != "0" ]; then 
+    echo "[INFO] Please run as root"
+    exit
+fi
+
+echo "[INFO] Installing vdd to /usr/bin/ ..."
+cp ./vdd /usr/bin/
+chmod u+x /usr/bin/vdd
+echo "[DONE] Ready!"
