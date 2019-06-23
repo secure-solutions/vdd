@@ -7,9 +7,9 @@ A verbose dd command with pv and dialog.
 `# vdd /dev/sde2 /dev/sde3 "bs=128M conv=notrunc,noerror"` <br>
 
 # Preview
-Command <br>
+<b>Command:</b> <br>
 ![LogShred](pic0.png?raw=true "Command") <br>
-Result <br>
+<b>Result:</b> <br>
 ![LogShred](pic1.png?raw=true "Result")
 
 # License
